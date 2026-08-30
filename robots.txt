@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /mentions-legales.html
+Disallow: /mentions-legales-en.html
+
+Sitemap: https://aegis-agence.com/sitemap.xml
