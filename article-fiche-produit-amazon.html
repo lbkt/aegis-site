@@ -459,6 +459,111 @@
     border:1px solid rgba(111,168,255,.35);border-radius:22px;padding:40px;text-align:center;position:relative;overflow:hidden}
   .art-cta h3{font-size:24px;font-weight:800;margin-bottom:12px;color:var(--txt)}
   .art-cta p{color:var(--muted);margin-bottom:24px;max-width:480px;margin-left:auto;margin-right:auto}
+
+  /* Exemples bon/mauvais */
+  .ex-compare{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:26px 0}
+  @media(max-width:600px){.ex-compare{grid-template-columns:1fr}}
+  .ex-box{border-radius:14px;padding:18px 20px;font-size:15px;line-height:1.5}
+  .ex-bad{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25)}
+  .ex-good{background:rgba(52,211,153,.08);border:1px solid rgba(52,211,153,.3)}
+  .ex-label{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;margin-bottom:10px}
+  .ex-bad .ex-label{color:#F87171}
+  .ex-good .ex-label{color:var(--green)}
+  .ex-label svg{width:16px;height:16px}
+  .ex-box .ex-text{color:var(--txt);font-weight:500}
+  .ex-box .ex-note{color:var(--dim);font-size:13px;margin-top:8px}
+  /* Démo visuelle bullet points */
+  .bp-demo{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px;margin:30px 0}
+  .bp-demo-head{font-size:13px;font-weight:700;color:var(--dim);margin-bottom:18px;display:flex;align-items:center;gap:8px}
+  .bp-demo-head svg{width:18px;height:18px;color:var(--blue-soft)}
+  .bp-mock{background:var(--bg);border-radius:12px;padding:20px 22px;border:1px solid var(--line)}
+  .bp-mock-title{font-size:15px;font-weight:700;color:var(--txt);margin-bottom:14px;line-height:1.4}
+  .bp-mock-list{list-style:none;padding:0;margin:0}
+  .bp-mock-list li{position:relative;padding-left:22px;margin-bottom:10px;color:var(--muted);font-size:14px;line-height:1.5}
+  .bp-mock-list li::before{content:"";position:absolute;left:0;top:7px;width:7px;height:7px;border-radius:2px;background:var(--blue-soft)}
+  .bp-mock-list li strong{color:var(--txt)}
+
+
+  /* MAQUETTE FICHE AMAZON ANNOTÉE */
+  .amz-wrap{position:relative;background:#fff;border-radius:20px;padding:28px;margin:0 auto;max-width:900px;
+    box-shadow:0 30px 70px -24px rgba(0,0,0,.5)}
+  .amz-grid{display:grid;grid-template-columns:88px 1fr 1.05fr;gap:20px}
+  @media(max-width:700px){.amz-grid{grid-template-columns:1fr}.amz-thumbs{flex-direction:row!important}}
+  /* colonne vignettes */
+  .amz-thumbs{display:flex;flex-direction:column;gap:8px}
+  .amz-thumb{width:100%;aspect-ratio:1;border:1px solid #ddd;border-radius:6px;background:#f7f7f7;display:flex;align-items:center;justify-content:center}
+  .amz-thumb.active{border:2px solid #e77600}
+  .amz-thumb svg{width:60%;height:60%;color:#bbb}
+  /* image principale */
+  .amz-main-img{background:#fff;border:1px solid #eee;border-radius:8px;aspect-ratio:1;display:flex;align-items:center;justify-content:center;position:relative}
+  .amz-main-img svg{width:70%;height:70%;color:#5a6b7b}
+  /* colonne infos */
+  .amz-info{display:flex;flex-direction:column}
+  .amz-title{font-size:17px;font-weight:600;color:#0F1111;line-height:1.35;margin-bottom:8px;font-family:Arial,sans-serif}
+  .amz-stars{display:flex;align-items:center;gap:6px;margin-bottom:12px}
+  .amz-stars .st{color:#FFA41C;font-size:15px;letter-spacing:1px}
+  .amz-stars .rc{color:#007185;font-size:13px}
+  .amz-price{font-size:26px;color:#0F1111;font-weight:400;margin-bottom:2px;font-family:Arial,sans-serif}
+  .amz-price sup{font-size:14px;top:-10px}
+  .amz-price .cur{font-size:14px;vertical-align:top}
+  .amz-ship{font-size:12px;color:#565959;margin-bottom:14px}
+  .amz-bullets{list-style:disc;padding-left:18px;margin:0 0 16px}
+  .amz-bullets li{font-size:12.5px;color:#0F1111;line-height:1.5;margin-bottom:6px;font-family:Arial,sans-serif}
+  .amz-bullets li b{font-weight:700}
+  .amz-btn{background:#FFD814;border:1px solid #FCD200;border-radius:100px;padding:9px;text-align:center;font-size:13px;color:#0F1111;font-weight:500;font-family:Arial,sans-serif}
+  /* Annotations */
+  .amz-annot{display:inline-flex;align-items:center;gap:5px;position:absolute;background:linear-gradient(135deg,var(--blue),var(--violet));
+    color:#fff;font-size:11px;font-weight:700;padding:4px 10px;border-radius:100px;white-space:nowrap;z-index:5;
+    box-shadow:0 6px 16px -4px rgba(139,92,246,.6);font-family:Arial,sans-serif}
+  .amz-annot .num{background:#fff;color:var(--violet);width:16px;height:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800}
+  /* Légende sous la maquette */
+  .amz-legend{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 24px;margin-top:22px;max-width:760px;margin-left:auto;margin-right:auto}
+  @media(max-width:600px){.amz-legend{grid-template-columns:1fr}}
+  .amz-leg-item{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--muted);line-height:1.4}
+  .amz-leg-num{flex-shrink:0;width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--violet));color:#fff;
+    font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-top:1px}
+  .amz-leg-item b{color:var(--txt)}
+
+
+  /* MINI-FICHES COMPARATIVES (bon/mauvais titre) */
+  .amz-vs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:28px 0}
+  @media(max-width:640px){.amz-vs{grid-template-columns:1fr}}
+  .amz-card{background:#fff;border-radius:14px;padding:20px;position:relative;box-shadow:0 20px 44px -20px rgba(0,0,0,.45)}
+  .amz-card-badge{position:absolute;top:-11px;left:16px;display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:800;
+    letter-spacing:.5px;text-transform:uppercase;padding:5px 12px;border-radius:100px;font-family:Arial,sans-serif}
+  .amz-card.bad .amz-card-badge{background:#EF4444;color:#fff}
+  .amz-card.good .amz-card-badge{background:#10B981;color:#fff}
+  .amz-card-badge svg{width:13px;height:13px}
+  .amz-card-img{background:#f7f7f7;border:1px solid #eee;border-radius:8px;height:90px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+  .amz-card-img svg{width:52px;height:52px;color:#c0c8d0;stroke-width:1.2}
+  .amz-card-title{font-size:15px;font-weight:600;color:#0F1111;line-height:1.35;margin-bottom:8px;font-family:Arial,sans-serif;min-height:60px}
+  .amz-card.bad .amz-card-title{color:#555;font-weight:400}
+  .amz-card-stars{color:#FFA41C;font-size:14px;letter-spacing:1px;margin-bottom:6px}
+  .amz-card-price{font-size:22px;color:#0F1111;font-weight:400;font-family:Arial,sans-serif}
+  .amz-card-price .cur{font-size:12px;vertical-align:top}
+  .amz-card-price sup{font-size:11px}
+  .amz-note-below{font-size:13px;line-height:1.45;margin-top:14px;padding-top:12px;border-top:1px solid #eee;font-family:Arial,sans-serif}
+  .amz-card.bad .amz-note-below{color:#B91C1C}
+  .amz-card.good .amz-note-below{color:#047857}
+
+
+  /* VISUEL IMAGES bon/mauvais */
+  .amz-img-demo{height:150px;border-radius:8px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;margin-bottom:8px}
+  .amz-img-demo.bad-bg{background:linear-gradient(135deg,#ffe0e0,#ffd0b0)}
+  .amz-img-demo.good-bg{background:#fff;border:1px solid #eee}
+  .amz-img-demo svg{width:78px;height:78px;color:#8a97a3;stroke-width:1.2}
+  .amz-img-demo.bad-bg svg{color:#c96}
+  .amz-fake-logo{position:absolute;top:8px;left:8px;background:#e74c3c;color:#fff;font-size:9px;font-weight:800;padding:3px 7px;border-radius:4px;font-family:Arial}
+  .amz-fake-promo{position:absolute;bottom:8px;right:8px;background:#f39c12;color:#fff;font-size:11px;font-weight:800;padding:4px 9px;border-radius:4px;transform:rotate(-8deg);font-family:Arial}
+  .amz-small-chair{position:absolute;bottom:10px;left:14px;width:26px!important;height:26px!important;opacity:.5}
+
+
+  /* VISUEL BULLET POINTS bon/mauvais */
+  .amz-bp-list{list-style:disc;padding-left:18px;margin:0;min-height:120px}
+  .amz-bp-list li{font-size:12.5px;color:#0F1111;line-height:1.5;margin-bottom:8px;font-family:Arial,sans-serif}
+  .amz-card.bad .amz-bp-list li{color:#666}
+  .amz-bp-list li b{font-weight:700}
+
 </style>
 </head>
 <body>
@@ -488,11 +593,50 @@
       <h1 class="art-title">Fiche produit Amazon : le guide complet pour optimiser vos ventes</h1>
       <div class="art-meta">
         <span>Par AEGIS</span><span class="dot"></span>
-        <span>8 min de lecture</span><span class="dot"></span>
-        <span>Amazon · Optimisation</span>
+        <span>Publié le 30 août 2025</span><span class="dot"></span>
+        <span>8 min de lecture</span>
       </div>
-      <div class="art-cover">
-        <div class="art-cover-ic"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6M9 9h1"/></svg></div>
+      <div style="margin:36px 0">
+      <div class="amz-wrap">
+        <div class="amz-grid">
+          <!-- Vignettes -->
+          <div class="amz-thumbs">
+            <div class="amz-thumb active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M6 19v2M18 19v2M5 11h14l-1 8H6zM7 11V6a2 2 0 012-2h6a2 2 0 012 2v5M9 11V7h6v4"/></svg></div>
+            <div class="amz-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M6 19v2M18 19v2M5 11h14l-1 8H6zM7 11V6a2 2 0 012-2h6a2 2 0 012 2v5M9 11V7h6v4"/></svg></div>
+            <div class="amz-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M6 19v2M18 19v2M5 11h14l-1 8H6zM7 11V6a2 2 0 012-2h6a2 2 0 012 2v5M9 11V7h6v4"/></svg></div>
+            <div class="amz-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M6 19v2M18 19v2M5 11h14l-1 8H6zM7 11V6a2 2 0 012-2h6a2 2 0 012 2v5M9 11V7h6v4"/></svg></div>
+          </div>
+          <!-- Image principale -->
+          <div style="position:relative">
+            <div class="amz-main-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M6 19v2M18 19v2M5 11h14l-1 8H6zM7 11V6a2 2 0 012-2h6a2 2 0 012 2v5M9 11V7h6v4"/></svg></div>
+            <span class="amz-annot" style="top:8px;left:8px"><span class="num">2</span> Images</span>
+          </div>
+          <!-- Infos -->
+          <div class="amz-info" style="position:relative">
+            <span class="amz-annot" style="top:-10px;right:0"><span class="num">1</span> Titre</span>
+            <div class="amz-title">Chaise de Bureau Ergonomique, Réglable en Hauteur, Support Lombaire, Lot de 2, Noir</div>
+            <div class="amz-stars"><span class="st">★★★★☆</span><span class="rc">1 247 évaluations</span></div>
+            <div class="amz-price"><span class="cur">€</span>149<sup>99</sup></div>
+            <div class="amz-ship">Livraison GRATUITE dès demain</div>
+            <div style="position:relative">
+              <span class="amz-annot" style="top:-8px;right:0"><span class="num">3</span> Bullet points</span>
+              <ul class="amz-bullets">
+                <li><b>CONFORT TOUTE LA JOURNÉE</b> — Support lombaire ajustable qui soulage le dos.</li>
+                <li><b>RÉGLABLE EN HAUTEUR</b> — Vérin à gaz certifié, s'adapte à tous les bureaux.</li>
+                <li><b>MONTAGE EN 10 MINUTES</b> — Matériel et notice illustrée inclus.</li>
+                <li><b>LOT DE 2 CHAISES</b> — Idéal pour équiper deux postes.</li>
+              </ul>
+            </div>
+            <div class="amz-btn">Ajouter au panier</div>
+          </div>
+        </div>
+      </div>
+      <div class="amz-legend">
+        <div class="amz-leg-item"><span class="amz-leg-num">1</span><span><b>Le titre</b> — votre première accroche, riche en mots-clés.</span></div>
+        <div class="amz-leg-item"><span class="amz-leg-num">2</span><span><b>Les images</b> — fond blanc, produit net, jusqu'à 9 visuels.</span></div>
+        <div class="amz-leg-item"><span class="amz-leg-num">3</span><span><b>Les bullet points</b> — vos bénéfices clés en un coup d'œil.</span></div>
+        <div class="amz-leg-item"><span class="amz-leg-num">4</span><span><b>La description &amp; les mots-clés cachés</b> — plus bas, pour le référencement.</span></div>
+      </div>
       </div>
     </div>
   </div>
@@ -524,6 +668,24 @@
           <li>Évitez le bourrage de mots-clés et les synonymes inutiles</li>
           <li>Émojis et caractères spéciaux sont proscrits</li>
         </ul>
+        <div class="amz-vs">
+          <div class="amz-card bad">
+            <span class="amz-card-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M18 6L6 18M6 6l12 12"/></svg> À éviter</span>
+            <div class="amz-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 19v2M18 19v2M5 11h14l-1 8H6zM7 11V6a2 2 0 012-2h6a2 2 0 012 2v5"/></svg></div>
+            <div class="amz-card-title">chaise bureau pas cher PROMO -50% livraison rapide</div>
+            <div class="amz-card-stars">★★★☆☆</div>
+            <div class="amz-card-price"><span class="cur">€</span>149<sup>99</sup></div>
+            <div class="amz-note-below">Trop court, en désordre, mention promo interdite, aucun mot-clé structuré. Amazon peut suspendre la fiche.</div>
+          </div>
+          <div class="amz-card good">
+            <span class="amz-card-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Recommandé</span>
+            <div class="amz-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 19v2M18 19v2M5 11h14l-1 8H6zM7 11V6a2 2 0 012-2h6a2 2 0 012 2v5"/></svg></div>
+            <div class="amz-card-title">Chaise de Bureau Ergonomique, Réglable en Hauteur, Support Lombaire, Lot de 2, Noir</div>
+            <div class="amz-card-stars">★★★★☆</div>
+            <div class="amz-card-price"><span class="cur">€</span>149<sup>99</sup></div>
+            <div class="amz-note-below">Marque + type de produit + caractéristiques clés + quantité + couleur. Lisible et riche en mots-clés.</div>
+          </div>
+        </div>
         <div class="art-callout"><p><strong>À retenir :</strong> un titre bien optimisé améliore directement votre visibilité et votre référencement naturel sur Amazon.</p></div>
 
         <h2>Les images : le déclencheur de l'achat</h2>
@@ -555,6 +717,22 @@
           <li>Ajoutez des guides visuels de dimensions</li>
           <li>Mettez le produit en scène pour une meilleure expérience</li>
         </ul>
+        <div class="amz-vs">
+          <div class="amz-card bad">
+            <span class="amz-card-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M18 6L6 18M6 6l12 12"/></svg> À éviter</span>
+            <div class="amz-img-demo bad-bg">
+              <span class="amz-fake-logo">MARQUE</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 19v2M18 19v2M5 11h14l-1 8H6zM7 11V6a2 2 0 012-2h6a2 2 0 012 2v5"/></svg>
+              <span class="amz-fake-promo">-50%</span>
+            </div>
+            <div class="amz-note-below">Fond coloré, logo, texte promotionnel, produit trop petit. Fiche non conforme, risque de blocage.</div>
+          </div>
+          <div class="amz-card good">
+            <span class="amz-card-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Recommandé</span>
+            <div class="amz-img-demo good-bg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 19v2M18 19v2M5 11h14l-1 8H6zM7 11V6a2 2 0 012-2h6a2 2 0 012 2v5"/></svg></div>
+            <div class="amz-note-below">Fond blanc pur (#FFFFFF), produit net occupant 85% du cadre, aucun texte ni logo. Conforme et pro.</div>
+          </div>
+        </div>
         <div class="art-callout"><p>Amazon autorise jusqu'à <strong>9 images par fiche</strong> : profitez-en pour valoriser votre article et booster votre taux de conversion.</p></div>
 
         <h2>Les vidéos : convaincre les hésitants</h2>
@@ -565,6 +743,33 @@
           <li>Un titre renseigné</li>
           <li>Les ASINs liés à la vidéo définis</li>
         </ul>
+
+        <h2>Les bullet points : vos arguments en un coup d'œil</h2>
+        <p>Situés juste sous le titre, les <strong>bullet points</strong> (ou points clés) sont les 5 lignes qui résument les bénéfices majeurs de votre produit. C'est souvent la seule partie que lit vraiment l'acheteur avant de décider. Chaque puce doit mettre en avant un <strong>bénéfice concret</strong>, pas seulement une caractéristique technique.</p>
+
+        <div class="amz-vs">
+          <div class="amz-card bad">
+            <span class="amz-card-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M18 6L6 18M6 6l12 12"/></svg> À éviter</span>
+            <ul class="amz-bp-list">
+              <li>Chaise noire</li>
+              <li>En métal et tissu</li>
+              <li>Roulettes incluses</li>
+              <li>Bonne qualité</li>
+            </ul>
+            <div class="amz-note-below">Caractéristiques brutes, sans bénéfice. Ne donne aucune raison d'acheter, ne se démarque pas.</div>
+          </div>
+          <div class="amz-card good">
+            <span class="amz-card-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Recommandé</span>
+            <ul class="amz-bp-list">
+              <li><b>CONFORT TOUTE LA JOURNÉE</b> — Support lombaire qui soulage le dos.</li>
+              <li><b>RÉGLABLE EN HAUTEUR</b> — S'adapte à tous les bureaux.</li>
+              <li><b>MONTAGE EN 10 MIN</b> — Notice illustrée incluse.</li>
+              <li><b>LOT DE 2</b> — Idéal pour deux postes.</li>
+            </ul>
+            <div class="amz-note-below">Chaque puce = un bénéfice concret en majuscules, puis le détail. Clair, vendeur, mémorable.</div>
+          </div>
+        </div>
+        <p>Astuce : commencez chaque puce par un <strong>bénéfice en majuscules</strong>, puis développez. C'est plus lisible et ça capte l'attention.</p>
 
         <h2>La description : le détail qui rassure</h2>
         <p>Le champ description présente votre article en détail. Bien optimisée, elle convainc l'acheteur tout en renforçant votre référencement. Soyez précis, structuré et orienté bénéfices client plutôt que simple liste de caractéristiques.</p>
