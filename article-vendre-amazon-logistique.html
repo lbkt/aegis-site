@@ -77,4 +77,161 @@
   section{padding:90px 0}
 
   footer{border-top:1px solid var(--line);padding:44px 0;margin-top:20px}
-  .foot{display:flex;justify-content:space-between;align-items:cente
+  .foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
+  .foot .muted{color:var(--dim);font-size:13px}
+
+  /* PAGE ARTICLE */
+  .art-hero{padding:60px 0 40px;position:relative;overflow:hidden}
+  .art-back{display:inline-flex;align-items:center;gap:8px;color:var(--muted);font-size:14px;font-weight:600;margin-bottom:28px;transition:color .2s}
+  .art-back:hover{color:var(--blue-soft)}
+  .art-back svg{width:16px;height:16px}
+  .art-cat{display:inline-block;font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;
+    background:linear-gradient(135deg,var(--blue),var(--violet));color:#fff;padding:6px 14px;border-radius:100px;margin-bottom:20px}
+  .art-title{font-size:clamp(28px,4.5vw,44px);font-weight:800;letter-spacing:-1px;line-height:1.15;max-width:820px;margin-bottom:20px}
+  .art-meta{display:flex;align-items:center;gap:18px;color:var(--dim);font-size:14px;flex-wrap:wrap}
+  .art-meta .dot{width:4px;height:4px;border-radius:50%;background:var(--dim)}
+  .art-body{max-width:760px;margin:0 auto;font-size:17px;line-height:1.75;color:var(--txt)}
+  .art-body .lead-para{font-size:20px;line-height:1.7;color:var(--muted);margin-bottom:36px;font-weight:400}
+  .art-body h2{font-size:27px;font-weight:800;letter-spacing:-.5px;margin:44px 0 18px;color:var(--txt)}
+  .art-body h3{font-size:21px;font-weight:700;margin:32px 0 14px;color:var(--blue-soft)}
+  .art-body p{margin-bottom:20px;color:var(--muted)}
+  .art-body strong{color:var(--txt);font-weight:700}
+  .art-body ul{margin:0 0 24px;padding-left:0;list-style:none}
+  .art-body ul li{position:relative;padding-left:30px;margin-bottom:13px;color:var(--muted);line-height:1.6}
+  .art-body ul li::before{content:"";position:absolute;left:0;top:9px;width:16px;height:16px;border-radius:50%;
+    background:linear-gradient(135deg,var(--blue),var(--violet));
+    box-shadow:0 0 0 4px rgba(59,130,246,.12)}
+  .art-body ul li::after{content:"";position:absolute;left:5px;top:13px;width:6px;height:6px;border-radius:50%;background:#fff}
+  .art-callout{background:linear-gradient(150deg,rgba(59,130,246,.12),rgba(139,92,246,.08));
+    border:1px solid rgba(111,168,255,.3);border-radius:18px;padding:26px 28px;margin:36px 0;position:relative}
+  .art-callout::before{content:"";position:absolute;left:0;top:16px;bottom:16px;width:4px;border-radius:4px;
+    background:linear-gradient(180deg,var(--blue),var(--violet),var(--pink))}
+  .art-callout p{margin:0;color:var(--txt);font-size:16px}
+  .art-callout strong{color:var(--blue-soft)}
+  .art-cta{max-width:760px;margin:56px auto 0;background:linear-gradient(150deg,rgba(59,130,246,.16),rgba(139,92,246,.12) 55%,rgba(236,72,153,.10));
+    border:1px solid rgba(111,168,255,.35);border-radius:22px;padding:40px;text-align:center;position:relative;overflow:hidden}
+  .art-cta h3{font-size:24px;font-weight:800;margin-bottom:12px;color:var(--txt)}
+  .art-cta p{color:var(--muted);margin-bottom:24px;max-width:480px;margin-left:auto;margin-right:auto}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Vendre sur Amazon en Europe : pourquoi la logistique décide du succès d'une marque",
+  "author": {"@type": "Organization", "name": "AEGIS", "url": "https://aegis-agence.com"},
+  "publisher": {"@type": "Organization", "name": "AEGIS", "logo": {"@type": "ImageObject", "url": "https://raw.githubusercontent.com/lbkt/aegis-site/main/favicon-512.png"}},
+  "datePublished": "2026-09-30",
+  "inLanguage": "fr"
+}
+</script>
+<link rel="alternate" hreflang="fr" href="https://aegis-agence.com/article-vendre-amazon-logistique.html">
+<link rel="alternate" hreflang="en" href="https://aegis-agence.com/article-vendre-amazon-logistique-en.html">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="index.html" class="brand">
+      <img class="logo-mark" src="https://raw.githubusercontent.com/lbkt/aegis-site/main/favicon-512.png" alt="AEGIS">
+      <span class="brand-word">AEGIS</span>
+    </a>
+    <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#modele">Notre modèle</a>
+      <a href="index.html#atouts">Nos atouts</a>
+      <a href="index.html#comment">Comment ça marche</a>
+      <a href="index.html#gestion">Ce qu'on gère</a>
+      <a href="index.html#blog">Blog</a>
+      <a href="article-vendre-amazon-logistique-en.html" class="lang"><b>FR</b> · EN</a>
+      <a href="index.html#contact" class="btn">Audit gratuit →</a>
+    </nav>
+  </div>
+  <div class="nav-overlay" id="navOverlay"></div>
+</header>
+
+<section class="art-hero">
+  <div class="wrap">
+    <a href="blog.html" class="art-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Retour au blog
+    </a>
+    <span class="art-cat" style="background:linear-gradient(135deg,#0E9F6E,#34D399);font-weight:500;letter-spacing:2px;margin-left:14px">Logistique</span>
+    <h1 class="art-title">Vendre sur Amazon en Europe : pourquoi la logistique décide du succès d'une marque</h1>
+    <div class="art-meta">
+      <span>Mis à jour en 2026</span><span class="dot"></span>
+      <span>6 min de lecture</span><span class="dot"></span>
+      <span>Par AEGIS</span>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <article class="art-body">
+    <p class="lead-para">Quand une marque se lance sur Amazon, on pense d'abord à la fiche produit, aux photos et à la publicité. Pourtant, une grande partie des blocages vient d'ailleurs : de la préparation et de l'envoi du stock. Un lot mal étiqueté, des quantités qui ne correspondent pas au plan d'expédition, et vos produits restent bloqués alors que vous payez déjà vos annonces.</p>
+    <p>Voici ce qu'Amazon attend réellement, les erreurs qui coûtent le plus cher, et comment les éviter.</p>
+
+    <h2>Ce qu'Amazon exige avant de stocker vos produits</h2>
+    <p>Avec le programme FBA (Expédié par Amazon), c'est Amazon qui stocke, expédie et gère le service client. En échange, vos produits doivent arriver conformes à ses règles de préparation :</p>
+    <ul>
+      <li>une étiquette FNSKU lisible sur chaque unité, qui identifie votre produit dans l'entrepôt ;</li>
+      <li>un emballage adapté, qui protège le produit sans se déchirer ni se défaire ;</li>
+      <li>des quantités exactes, conformes au plan d'expédition créé dans Seller Central ;</li>
+      <li>des cartons identifiés et dans les limites de poids et de dimensions indiquées par Amazon.</li>
+    </ul>
+    <p>Chaque règle semble simple. C'est leur accumulation, sur des centaines d'unités, qui devient chronophage.</p>
+
+    <h2>Les 4 erreurs qui bloquent le plus les marques</h2>
+    <ul>
+      <li><strong>L'étiquetage.</strong> Un code-barres fabricant laissé visible à côté de l'étiquette FNSKU peut être lu à la place de celle-ci à la réception. Le produit risque alors d'être mal rattaché.</li>
+      <li><strong>Un plan d'expédition qui ne correspond pas à la réalité.</strong> Si vous annoncez 500 unités et qu'il en part 480, Amazon signale un écart de réception, et les unités manquantes ne seront pas toujours retrouvées.</li>
+      <li><strong>Un emballage non conforme.</strong> Selon le produit, certains articles exigent un sachet avec avertissement, ou une protection supplémentaire.</li>
+      <li><strong>Des produits non éligibles.</strong> Certaines catégories sont restreintes, et les produits dangereux (batteries au lithium, aérosols, inflammables) obéissent à des règles strictes.</li>
+    </ul>
+    <p>La plupart de ces erreurs se contrôlent en quelques minutes avant le départ. Corrigées après coup, elles prennent des jours.</p>
+
+    <h2>Faire soi-même ou déléguer à un prep center ?</h2>
+    <p>Préparer ses premiers envois soi-même est un bon moyen de comprendre les règles. Mais dès que les volumes montent, le temps passé à étiqueter, emballer et contrôler devient un frein : 500 unités à 3 minutes chacune représentent déjà 25 heures de travail.</p>
+    <p>C'est le rôle d'un prep center : réceptionner la marchandise, la contrôler, l'étiqueter, l'emballer et l'expédier vers Amazon. Si vous voulez comprendre en détail ce qu'est un prep center et ce qu'il fait concrètement, <a href="https://fba-prep-idf.fr/" style="color:var(--blue-soft);text-decoration:underline">ce guide détaille chaque étape</a>.</p>
+
+    <h2>Comment nous travaillons avec les marques</h2>
+    <p>Chez AEGIS, nous distribuons des produits de marques sur les marketplaces, et la qualité de la préparation fait partie de la qualité du service. Pour cette étape, nous nous appuyons sur notre prep center Amazon FBA en Île-de-France, <a href="https://fba-prep-idf.fr/" style="color:var(--blue-soft);text-decoration:underline">FBA PREP IDF</a>, situé à Saint-Prix dans le Val-d'Oise. Cette préparation permet de livrer des produits conformes à Amazon, sans erreur d'étiquetage.</p>
+
+    <h2>La checklist avant d'envoyer un premier lot</h2>
+    <ul>
+      <li>Créez le plan d'expédition dans Seller Central avec les quantités exactes.</li>
+      <li>Vérifiez que chaque référence est éligible à la vente.</li>
+      <li>Neutralisez les anciens codes-barres avant d'appliquer l'étiquette FNSKU.</li>
+      <li>Contrôlez l'emballage et le poids de chaque carton.</li>
+      <li>Conservez vos factures et numéros de suivi : ils servent en cas d'écart.</li>
+    </ul>
+
+    <h2>En résumé</h2>
+    <p>Sur Amazon, la logistique n'est pas un détail : c'est elle qui détermine si vos produits sont en vente ou immobilisés. Une préparation rigoureuse évite l'essentiel des blocages et protège votre budget publicitaire.</p>
+  </article>
+
+  <div class="art-cta">
+    <h3>Vous souhaitez vendre vos produits sur les marketplaces européennes ?</h3>
+    <p>On achète votre stock, on gère votre présence sur Amazon et les marketplaces européennes, et on développe vos ventes.</p>
+    <a href="index.html#contact" class="btn">Contactez AEGIS →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap foot">
+    <span class="muted">© 2025 AEGIS — Distributeur-partenaire sur les marketplaces européennes.</span>
+    <span class="muted">contact@aegis-agence.com &middot; <a href="mentions-legales.html" style="color:var(--dim)">Mentions légales</a></span>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    const burger=document.getElementById('navBurger'),links=document.getElementById('navLinks'),overlay=document.getElementById('navOverlay');
+    if(!burger||!links)return;
+    function toggle(open){burger.classList.toggle('open',open);links.classList.toggle('open',open);if(overlay)overlay.classList.toggle('open',open);document.body.style.overflow=open?'hidden':'';}
+    burger.addEventListener('click',()=>toggle(!links.classList.contains('open')));
+    if(overlay)overlay.addEventListener('click',()=>toggle(false));
+    links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>toggle(false)));
+  })();
+</script>
+</body>
+</html>
